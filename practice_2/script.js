@@ -32,7 +32,7 @@ do {
     rateFilm = prompt('Насколько оцените его?', '');
 }
 while ((lastFilm == '' || rateFilm == '') ||
-      (lastFilm.length() > 50 || rateFilm.length() > 50));
+      (lastFilm.length > 50 || rateFilm.length > 50));
 
 personalMovieDB.movies[lastFilm] = rateFilm;
 
