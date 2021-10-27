@@ -40,7 +40,7 @@ const count = personalMovieDB.count;
 
 if (count < 10) {
     console.log('Просмотрено довольно мало фильмов');
-} else if (30 >= count >= 10) {
+} else if (count >= 10 || count <= 30) {
     console.log('Вы классический зритель');
 } else if (count > 30) {
     console.log('Вы киноман');
