@@ -1,14 +1,9 @@
 "use strict";
 
-function showFirstMessage(a, b) {
-    return (a + b);
-}
 
-const a = function(a, b) {
-    return a + b;
-};
+const arr = [1, 2, 3, 4, 5, 6, 7];
 
-const b = (a, b) => {return a + b;};
+const newArr = arr.slice();
 
-console.log(b(1, 20));
 
+console.log(newArr, arr);
